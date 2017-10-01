@@ -1,5 +1,5 @@
-resource "aws_lambda_function" "demo_lambda" {
-  function_name    = "demo_lambda"
+resource "aws_lambda_function" "scraper" {
+  function_name    = "scraper"
   handler          = "index.handler"
   runtime          = "nodejs4.3"
   filename         = "function.zip"
