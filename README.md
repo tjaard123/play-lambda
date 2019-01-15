@@ -53,6 +53,7 @@ source_profile=company # Links back to company profile
 
 You can use the CLI like this now:
 ```sh
+aws sts get-caller-identity # Get the identity the CLI is using
 aws s3 ls # Outputs S3 buckets for default (personal) account in eu-west-1
 aws s3 ls --profile company # Company root account in eu-west-1
 aws s3 ls --pfofile client-at-company # Assume role through company root account to client account 111175111141 and list S3 buckets in eu-west-1
